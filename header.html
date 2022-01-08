@@ -1,0 +1,58 @@
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+	<div class="d-flex align-items-center justify-content-between">
+		<a href="index.php" class="logo d-flex align-items-center">
+			<img src="assets/img/logo.png" alt="" />
+			<span class="d-none d-lg-block">&nbspBo Bakery</span>
+		</a>
+		<i class="bi bi-list toggle-sidebar-btn"></i>
+	</div>
+	<!-- End Logo -->
+
+	<nav class="header-nav ms-auto">
+		<ul class="d-flex align-items-center">
+			<li class="nav-item dropdown pe-3">
+				<a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+					<img src="assets/img/profile-vector.jpg" alt="Profile" class="rounded-circle" />
+					<span class="d-none d-md-block dropdown-toggle ps-2">Admin</span> </a
+				><!-- End Profile Image Icon -->
+
+				<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+					<li>
+						<a class="dropdown-item d-flex align-items-center" type="button" href="#" data-toggle="modal" data-target="#signoutModal">
+							<i class="bi bi-box-arrow-right"></i>
+							<span>Sign Out</span>
+						</a>
+					</li>
+				</ul>
+				<!-- End Profile Dropdown Items -->
+			</li>
+			<!-- End Profile Nav -->
+		</ul>
+	</nav>
+	<!-- End Icons Navigation -->
+</header>
+<!-- End Header -->
+
+<!-- Sign out modal -->
+<div class="modal fade" id="signoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Beneran mau keluar?</h5>
+				<button class="btn-close" type="button" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">Pilih "Sign Out" di bawah ini untuk mengakhiri sesi saat ini.</div>
+			<div class="modal-footer">
+				<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+				<a class="btn btn-primary" href="signout.php">Sign Out</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Sign out modal -->
+
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
