@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // uploadan gambar
         $filename = $_FILES["img"]["name"];
         if($filename != '') {
-            $ekstensi = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+            $ekstensi = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
             $ekstensi_valid = array("jpg", "jpeg", "png", "gif");
             if(in_array($ekstensi, $ekstensi_valid)){
                 $img_base64 = base64_encode(file_get_contents($_FILES["img"]["tmp_name"]));
